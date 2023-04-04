@@ -1,33 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <title>Navigation</title>
-      <style>
+<head>
+    <meta charset="UTF-8">
+    <title>Navigation</title>
+    <style>
         .header-div {
-          background-color: cornflowerblue;
+            background-color: cornflowerblue;
         }
         .nav li a{
-          accent-color: beige;
+            accent-color: beige;
         }
-      </style>
-  </head>
-  <body>
-    <div class="header-div">
-      <nav>
+        .flex-content {
+            display: flex;
+        }
+        .leftbar {
+            flex-grow: 1;
+            background-color: red;
+        }
+        .maincontent {
+            flex-grow: 3;
+            background-color: aqua;
+        }
+        .rightbar {
+            flex-grow: 1;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+<div class="header-div">
+    <nav>
         <ul>
-        <li><a href="index.html">Головна</a></li>
-        <li><a href="index.html">Категорії</a></li>
-        <li><a href="index.html">Форум</a></li>
-        <li><a href="index.html">Контакти</a></li>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="index.html">Категорії</a></li>
+            <li><a href="index.html">Форум</a></li>
+            <li><a href="index.html">Контакти</a></li>
         </ul>
-      </nav>
-    </div>
-    <div class="flex-content">
+    </nav>
+</div>
+<div class="flex-content">
     <div class = "leftbar">Left Sidebar</div>
     <div class = "maincontent"> Main Content</div>
     <div class = "rightcontent">Right Sidebar</div>
-      </div>
-    <div>Footer</div>
-  </body>
+</div>
+<div>Footer</div>
+</body>
 </html>
