@@ -6,9 +6,12 @@
     <style>
         .header-div {
             background-color: cornflowerblue;
+            height: 60px;
         }
-        .nav li a{
-            accent-color: beige;
+        nav {
+            padding-top: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
         }
         .flex-content {
             display: flex;
@@ -16,6 +19,10 @@
         .leftbar {
             flex-grow: 1;
             background-color: red;
+            min-width: 20%;
+        }
+        h1, h2, h3 {
+            text-align: center;
         }
         .maincontent {
             flex-grow: 3;
@@ -24,6 +31,40 @@
         .rightbar {
             flex-grow: 1;
             background-color: blueviolet;
+            min-width: 20%;
+        }
+        p {
+            padding: 5%;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            height: 100%;
+        }
+        li {
+            height: 100%;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            padding: 0 20px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: #ddd;
+        }
+        .footer{
+            background-color: #333333;
+        }
+        .footer h1 {
+            color: #f2f2f2;
         }
     </style>
 </head>
@@ -32,17 +73,36 @@
     <nav>
         <ul>
             <li><a href="index.html">Головна</a></li>
-            <li><a href="index.html">Категорії</a></li>
+            <li><a href="index.html">Карта сайту</a></li>
+            <li><a href="index.html">Новинки</a></li>
+            <li><a href="index.html">Зворотній зв'язок</a></li>
+            <li><a href="index.html">Наші партнери</a></li>
             <li><a href="index.html">Форум</a></li>
             <li><a href="index.html">Контакти</a></li>
         </ul>
     </nav>
 </div>
 <div class="flex-content">
-    <div class = "leftbar">Left Sidebar</div>
-    <div class = "maincontent"> Main Content</div>
-    <div class = "rightcontent">Right Sidebar</div>
+    <div class = "leftbar">
+        <h3>Left Sidebar</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at lobortis nisi. Sed auctor enim non bibendum vehicula. Fusce tristique nisl eu velit tempus, ut ultrices odio porttitor. Morbi non odio arcu. Suspendisse potenti. Integer ex quam, tincidunt in erat pretium, imperdiet semper ipsum. Praesent tincidunt id arcu sed facilisis. Suspendisse non justo sem. Maecenas a consectetur lacus. In auctor massa nec quam pretium, id volutpat dolor condimentum. Donec nec lectus eget urna aliquet efficitur vel tincidunt lorem. Integer nibh ligula, consequat vel ex sed, mollis dapibus lectus.</p>
+    </div>
+    <div class = "maincontent">
+        <h2>Main Content</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac maximus tellus, quis maximus mi. Aenean auctor diam quis purus venenatis, non tempor risus vehicula. Praesent finibus dui nulla, et aliquam diam consectetur ut. Aenean fringilla, turpis eu malesuada semper, metus ligula tincidunt nibh, in mollis odio neque a quam. Aliquam orci ipsum, suscipit at nunc eget, venenatis sagittis massa. Ut dapibus luctus arcu accumsan ornare. Fusce pharetra ante ut nulla posuere, vitae molestie libero luctus. Vestibulum mollis at enim in consectetur. Donec turpis odio, vulputate id ultrices sed, viverra a est. Morbi mattis ipsum felis, vel volutpat elit blandit rhoncus. Phasellus vestibulum et mauris vitae ultrices. Vestibulum vehicula sed leo sed interdum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin urna nibh, faucibus a dapibus in, ornare sit amet turpis.
+
+            Pellentesque lectus sem, tempus at vestibulum a, suscipit et lacus. Nam massa eros, molestie in venenatis ut, pellentesque non tellus. Cras vitae odio in orci euismod convallis. Praesent leo quam, tristique non fermentum ac, sodales non mi. Ut id felis aliquam, posuere urna in, eleifend lectus. Donec pellentesque quis elit a rutrum. Proin egestas purus sit amet tellus lacinia rhoncus. Phasellus quis luctus erat. Ut faucibus id ipsum ac bibendum. Nulla tempus eu mi ac gravida. Aliquam vitae efficitur nunc. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec iaculis sed lorem ut elementum. Vivamus at tellus mollis, commodo orci sed, ornare massa. Nulla ornare scelerisque ipsum, ac cursus arcu facilisis sit amet. Nam vehicula suscipit augue a varius.
+
+            Integer iaculis porta sollicitudin. Quisque in auctor orci, et pellentesque sapien. In non finibus arcu. Donec ac ligula blandit, porta lacus id, auctor sapien. Nam aliquam auctor lectus, a egestas nisi malesuada quis. Donec quis turpis sem. Aenean eros lorem, sodales vitae sem ut, placerat tincidunt quam. Aliquam malesuada at arcu id scelerisque. Mauris elementum dignissim nisl ac viverra. Sed ultrices tortor non nunc fermentum convallis.
+
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas maximus libero tortor, a pellentesque lorem laoreet at. Morbi eget commodo sem. In finibus lobortis congue. Vivamus fermentum arcu ac nulla malesuada finibus. Mauris ullamcorper, urna sed consequat posuere, risus arcu tincidunt lorem, eu fringilla tortor tellus ac nibh. Aliquam erat volutpat. Aliquam consequat enim a aliquam dapibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec quis imperdiet nunc. Curabitur nec euismod diam, interdum posuere sapien.
+
+            Maecenas non fermentum leo, quis convallis ex. Duis pharetra eleifend pellentesque. Donec hendrerit sem eget sapien tempus, quis sollicitudin urna ultricies. Maecenas lacinia magna sit amet leo commodo cursus. Etiam semper erat nulla, ut efficitur velit varius a. Cras quis odio tellus. Ut sapien mi, interdum semper nisi quis, lacinia euismod sem. Fusce viverra imperdiet risus, eget rhoncus quam. Proin rutrum ex tortor, sed pulvinar lacus convallis eu.</p>
+    </div>
+    <div class = "rightbar">Right Sidebar</div>
 </div>
-<div>Footer</div>
+<div class="footer">
+    <h1>Footer</h1>
+</div>
 </body>
 </html>
